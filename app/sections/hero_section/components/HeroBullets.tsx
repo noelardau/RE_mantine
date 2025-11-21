@@ -1,6 +1,6 @@
 import { IconCheck } from '@tabler/icons-react';
 import { Button, Container, Group, Image, List, Text, ThemeIcon, Title } from '@mantine/core';
-import image from './newHeroImage.jpeg';
+import image from '../newHeroImage.jpeg';
 import classes from './HeroBullets.module.css';
 
 import { useTranslation } from 'react-i18next';
@@ -9,7 +9,7 @@ export function HeroBullets() {
     const { t }= useTranslation()
 
   return (
-    <Container size="md">
+    <>
       <div className={classes.inner}>
         <div className={classes.content}>
           <Title className={classes.title}>
@@ -32,6 +32,6 @@ export function HeroBullets() {
         </div>
         <Image src={image} className={classes.image} />
       </div>
-    </Container>
+    </>
   );
 }

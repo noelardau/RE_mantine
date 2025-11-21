@@ -1,6 +1,6 @@
 
 import { Outlet } from "react-router";
-import { AppShell, ScrollArea } from "@mantine/core";
+import { AppShell, Container, ScrollArea } from "@mantine/core";
 import { HeaderMenu } from "./components/HeaderMenu";
 
 
@@ -30,7 +30,9 @@ export default function AppLayout(){
        
 
         <AppShell.Main> 
-            <Outlet />
+           <Container size="md">
+              <Outlet />
+           </Container>
         </AppShell.Main>
 
         <AppShell.Footer >

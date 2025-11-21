@@ -1,6 +1,12 @@
-
 import type { Route } from "./+types/home";
-import { HeroBullets } from "~/sections/hero_section/HeroBullets";
+
+
+
+import { HeroSection } from "~/sections/hero_section/HeroSection";
+import { FuturEvent } from "~/sections/future_events/FuturEvent";
+import { FeaturesCards } from "~/sections/services/components/FeaturesCards";
+
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -32,10 +38,25 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+
+export async function clientLoader({}: Route.LoaderArgs) {
+ 
+ let data = await fetch("http://localhost:3000/v1/evenements/all")
+ 
+ let events = await data.json()
+  return {
+    events
+  };
+}
+
+
+
+export default function Home({loaderData}: Route.ComponentProps) {
   return <div >
 
-      <HeroBullets></HeroBullets>
+      <HeroSection></HeroSection>
+      <FuturEvent events={loaderData.events}></FuturEvent>
+      <FeaturesCards></FeaturesCards>
 
   </div>;
 }
