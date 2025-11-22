@@ -2,6 +2,7 @@
 import { Outlet } from "react-router";
 import { AppShell, Container, ScrollArea } from "@mantine/core";
 import { HeaderMenu } from "./components/HeaderMenu";
+import { FooterLinks } from "./components/FooterLinks";
 
 
 
@@ -36,7 +37,7 @@ export default function AppLayout(){
         </AppShell.Main>
 
         <AppShell.Footer >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus quam cumque ut voluptas! Tempora obcaecati laborum pariatur optio ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus quam cumque ut voluptas! Tempora obcaecati laborum pariatur optio ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus quam cumque ut voluptas! Tempora obcaecati laborum pariatur optio ducimus.
+            <FooterLinks></FooterLinks>
         </AppShell.Footer>
 
     </AppShell>

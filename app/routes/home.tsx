@@ -8,6 +8,7 @@ import { FeaturesCards } from "~/sections/services/components/FeaturesCards";
 import { AboutSection } from "~/sections/about/AboutSection";
 import type { evenement } from "~/sections/future_events/interfaces/Evenement";
 import { Services } from "~/sections/services/Services";
+import { Contact } from "~/sections/contact/Contact";
 
 
 
@@ -74,6 +75,7 @@ export default function Home({loaderData}: Route.ComponentProps) {
       <FuturEvent events={events}></FuturEvent>
      <Services id="services"></Services>
       <AboutSection></AboutSection>
+      <Contact></Contact>
 
 
   </div>;

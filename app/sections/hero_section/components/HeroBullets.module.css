@@ -44,7 +44,8 @@
 
 .highlight {
   position: relative;
-  background-color: var(--mantine-color-blue-light);
+  color:oklch(57.7% 0.245 27.325);
   border-radius: var(--mantine-radius-sm);
   padding: 4px 12px;
+  font-weight: bold;
 }
