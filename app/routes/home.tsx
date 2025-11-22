@@ -5,6 +5,9 @@ import type { Route } from "./+types/home";
 import { HeroSection } from "~/sections/hero_section/HeroSection";
 import { FuturEvent } from "~/sections/future_events/FuturEvent";
 import { FeaturesCards } from "~/sections/services/components/FeaturesCards";
+import { AboutSection } from "~/sections/about/AboutSection";
+import type { evenement } from "~/sections/future_events/interfaces/Evenement";
+import { Services } from "~/sections/services/Services";
 
 
 
@@ -41,22 +44,37 @@ export function meta({}: Route.MetaArgs) {
 
 export async function clientLoader({}: Route.LoaderArgs) {
  
- let data = await fetch("http://localhost:3000/v1/evenements/all")
+//  let data = await fetch("http://localhost:3000/v1/evenements/all")
  
- let events = await data.json()
-  return {
-    events
-  };
+//  let events = await data.json()
+  return null;
 }
 
 
 
 export default function Home({loaderData}: Route.ComponentProps) {
-  return <div >
+
+  let events:evenement[]=[
+    {
+      evenement_id: "dkjfqlsjfm",
+      titre: "",
+      description_evenement: "",
+     
+      type_evenement: {type_evenement_nom:"Test"},
+     
+     
+   
+      fichiers: [],
+    }
+  ]
+
+ return <div >
 
       <HeroSection></HeroSection>
-      <FuturEvent events={loaderData.events}></FuturEvent>
-      <FeaturesCards></FeaturesCards>
+      <FuturEvent events={events}></FuturEvent>
+     <Services id="services"></Services>
+      <AboutSection></AboutSection>
+
 
   </div>;
 }

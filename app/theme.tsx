@@ -2,20 +2,19 @@ import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
   colors: {
-    reny: [
-      '#fdf2f2', // 0 - très clair
-      '#f9d9d9', // 1
-      '#f4b6b6', // 2
-      '#ee8e8e', // 3
-      '#e86c6c', // 4
-      '#d95a5a', // 5 - votre couleur originale
-      '#c44b4b', // 6
-      '#a83d3d', // 7
-      '#8a3030', // 8
-      '#6b2525', // 9 - très foncé
-    ],
+   reny: [
+  "oklch(97% 0.03 27.325)",   // 0
+  "oklch(94% 0.06 27.325)",   // 1
+  "oklch(88% 0.11 27.325)",   // 2
+  "oklch(80% 0.17 27.325)",   // 3
+  "oklch(71% 0.22 27.325)",   // 4
+  "oklch(57.7% 0.245 27.325)", // 5 ← TA COULEUR EXACTE
+  "oklch(50% 0.245 27.325)",   // 6
+  "oklch(44% 0.24 27.325)",    // 7
+  "oklch(38% 0.23 27.325)",    // 8
+  "oklch(32% 0.22 27.325)"     // 9
+]
   },
-  
   primaryColor: 'reny',
-  primaryShade: 5,
+  primaryShade: 5,     // ou 6 selon ton goût, 5 est plus lumineux
 });
