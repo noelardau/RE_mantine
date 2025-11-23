@@ -1,30 +1,37 @@
 import { IconBrandFacebook, IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
 import { ActionIcon, Container, Group, Text } from '@mantine/core';
+import {useTranslation} from "../hooks/useTranslation"
 
 import classes from '../styles/FooterLinks.module.css';
 
-const data = [
-  {
-    title: 'NOS SERVICES',
-    links: [
-      { label: 'Séminaires & formateurs', link: '#' },
-      { label: 'Spectacles & Shows', link: '#' },
-      { label: 'Conférences', link: '#' },
-      { label: 'Foires & Salons', link: '#' },
-    ],
-  },
-  {
-    title: 'NAVIGATION',
-    links: [
-      { label: 'Accueil', link: '#' },
-      { label: 'Services', link: '#' },
-      { label: 'A propos', link: '#' },
-      { label: 'Contactez', link: '#' },
-    ],
-  },
-];
 
 export function FooterLinks() {
+  
+  const {t} = useTranslation()
+
+
+ const data = [
+    {
+      title: t('footer-section-services'), // "NOS SERVICES" ou "NY TOLOTRA"
+      links: [
+        { label: t('footer-service-1'), link: '/services#seminaires' },        // Séminaires & formateurs
+        { label: t('footer-service-2'), link: '/services#spectacles' },       // Spectacles & Shows
+        { label: t('footer-service-3'), link: '/services#conferences' },      // Conférences
+        { label: t('footer-service-4'), link: '/services#foires-salons' },    // Foires & Salons
+      ],
+    },
+    {
+      title: t('footer-section-nav'), // "NAVIGATION" ou "FITODIANA"
+      links: [
+        { label: t('footer-nav-home'),     link: '/' },           // Accueil / Trano
+        { label: t('footer-nav-services'), link: '/services' },   // Services / Tolotra
+        { label: t('footer-nav-about'),    link: '/a-propos' },   // À propos / Momba anay
+        { label: t('footer-nav-contact'),  link: '/contact' },    // Contactez / Hifandray
+      ],
+    },
+  ];
+
+  
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
       <Text<'a'>
@@ -54,7 +61,7 @@ export function FooterLinks() {
             RENY EVENTS
           </Text>
           <Text size="sm" c="dimmed" className={classes.description}>
-            Organisateur d'événements professionnels, associatifs, culturels, sportifs, corporatifs et tous vos événements divers, conférences et foires.
+           {t("footer-description")}
           </Text>
           <Group mt="sm">
             <Text size="sm" c="dimmed">
@@ -75,10 +82,10 @@ export function FooterLinks() {
       </Container>
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2025 RENY Events. Tous droits réservés.
+         {t("footer-copyright")}
         </Text>
         <Text c="dimmed" size="sm">
-          Organisateur événementiel professionnel.
+        {t("footer-tagline")}
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">

@@ -21,40 +21,24 @@
     "services-title":"Serivisy fandrindrana hetsika",
    "services-text":"Manomboka amin'ny famolavolana ka hatramin'ny fahavitana, ny RENY Events dia manohana anao amin'ny tetikasanao hetsika rehetra miaraka amin'ny fahaizana ekena sy fomba fiasa manokana.",
 
-   "first-service-title":"Seminera & Fiofanana",
-   "first-service-one":"Fandaminana fihaonambe, seminera, fiofanana ary atrikasa",
-   "first-service-two": "Efitrano misy fitaovana",
-   "first-service-three":"Fitaovana audiovisuel",
+  
+  "first-service-title": "Kaonferansa, Seminera ary Fampiofanana",
+  "first-service-description": "Fikarakarana tanteraka ny kaonferansa, seminera ary fampiofanana miaraka amin'ny efitrano feno fitaovana sy fitaovana audiovisuel.",
 
+  "second-service-title": "Lanonana hoan'ny Orinasa & Fampisehoana",
+  "second-service-description": "Fikarakarana hariva ho an'ny orinasa, kaonseritra ary fikirakirana artiste mba hahazo hetsika mahafinaritra.",
 
-   "second-service-title": "Hetsika sy fampisehoana",
-   "second-service-one":"Hetsika orinasa",
-   "second-service-two": "fampisehoana",
-   "second-service-three": "Fandrindrana ara-javakanto",
+  "third-service-title": "Salon & Fampirantiana",
+  "third-service-description": "Stand namboarina manokana, logistika feno ary fampiroboroboana hetsika ho an'ny fandraisan'anjaranareo amin'ny salon.",
 
+  "forth-service-title": "Webinaire & Koloky",
+  "forth-service-description": "Fitantanana webinaire, koloky ary kaonferansa miaraka amin'ny haingo hetsika sy fitaovana audiovisuel.",
 
-      "third-service-title":"Foara & Fampirantiana",
-    "third-service-one":"Stand personnalisée",
-    "third-service-two":"Laojistika amin'ny antsipirihany",
-    "third-service-three":"Fampiroboroboana hetsika",
+  "fifth-service-title": "Hetsika ho an'ny Orinasa amin'ny antsipiriany",
+  "fifth-service-description": "Famolavolana manontolo, fikirakirana logistika ary serasera mitambatra ho an'ny hetsika matihanina anareo.",
 
-    "forth-service-title":"Fihaonambe",
-
-   "forth-service-one": "Fandaminana webinaires, colloques ary valan-dresaka ho an'ny mpanao gazety",
-    "forth-service-two":"Haingo hetsika",
-    "forth-service-three":"Fitaovana audiovisuel",
-
-
-    "fifth-service-title":"Hetsika hoan'ny orinasa",
-    "fifth-service-one": "Concept global",
-    "fifth-service-two":"Fandrindrana ny Logistika",
-    "fifth-service-three":"Communication intégrée",
-
-     "sixth-service-title":"Fifandraisana amin'ny vahoaka",
-
-    "sixth-service-one":"Drafi-pifandraisana",
-    "sixth-service-two":"Fanasana ny haino aman-jery",
-    "sixth-service-three":"Gestion de presse",
+  "sixth-service-title": "Fifandraisana amin'ny Mpanao gazety & Serasera",
+  "sixth-service-description": "Drafitra serasera, fanasana haino aman-jery ary fitantanana gazety mba hahazoana fahitana tsara ny hetsika.",
 
 
 
@@ -70,7 +54,84 @@
      "contact-section-right-side-text": "Farito aminay ny tetikasanao ary hiverina aminao haingana izahay miaraka amin'ny tolo-kevitra manokana.",
      "Envoyer":"Alefa",
      "contact-section-placeholder": "Farito eto ny zavatra tianao ho karakaraina....",
-      "footer-left-text": "Mpikarakara hetsika matihanina, mpiara-miasa, kolontsaina, fanatanjahantena, orinasa ary hetsika isan-karazany, fihaonambe ary foara."
+      "footer-left-text": "Mpikarakara hetsika matihanina, mpiara-miasa, kolontsaina, fanatanjahantena, orinasa ary hetsika isan-karazany, fihaonambe ary foara.",
+
+
+      
+  "footer-brand": "RENY EVENTS",
+  "footer-description": "Mpikarakara hetsika matihanina, fikambanana, kolontsaina, fanatanjahan-tena, orinasa ary ny hetsika isan-karazany rehetra, kaonferansa ary fampirantiana.",
+  
+  "footer-phones": "038 22 749   038 00 01 03",
+  
+  "footer-address-line1": "1 Reny events",
+  "footer-address-line2": "1 Pavillon 2, Cité Perrier, Ambohijatovo",
+  
+  "footer-section-services": "NY TOLOTRA",
+  "footer-service-1": "Seminera & Fampiofanana",
+  "footer-service-2": "Fampisehoana & Show",
+  "footer-service-3": "Kaonferansa",
+  "footer-service-4": "Salon & Fampirantiana",
+  
+  "footer-section-nav": "FITODIANA",
+  "footer-nav-home": "Trano",
+  "footer-nav-services": "Tolotra",
+  "footer-nav-about": "Momba anay",
+  "footer-nav-contact": "Hifandray",
+  
+  "footer-copyright": "© 2025 RENY Events. Zo rehetra voaaro.",
+  "footer-tagline": "Mpikarakara hetsika matihanina.",
+
+  
+  "contact-title": "Mifandraisa amin'ny RENY Events",
+  "contact-subtitle": "Manana tetikasa hetsika ve ianao ? Mifandraisa aminay izao mba hiresahana ny filanareo sy hahazoana tolotra manokana.",
+
+  "contact-form-title": "Mandefasa mailaka",
+  "contact-form-description": "Lazao aminay ny tetikasanao ary hifandray aminao haingana izahay miaraka amin'ny tolotra manokana.",
+
+  "contact-name": "Anaranao",
+  "contact-email": "Mailakao",
+  "contact-subject": "Lohahevitra",
+  "contact-message": "Lazao aminay ny hetsika : tanjona, endrika, isan'ny olona, daty tadiavina…",
+  "contact-placeholder": "Ampidiro daholo ny fampahalalana ilaina (tetibola, toerana, sns.)",
+  "contact-send": "Alefa",
+
+  
+  "contact-icons": {
+    "facebook": {
+      "title": "Facebook",
+      "description": "Reny Events"
+    },
+    "phone": {
+      "title": "Laharan-tarobia",
+      "description": "038 32 746 01 / 034 80 001 88"
+    },
+    "address": {
+      "title": "Adiresy",
+      "description": "Pavillon 2, Cité Perrier, Ambohijatovo"
+    },
+    "availability": {
+      "title": "Fahafahana",
+      "description": "7 andro / 7 – 24 ora / 24"
+    }
+  },
+
+  
+  "about-badge": "NY TANTARANAY",
+  "about-title": "Reny Events : hetsika sy firaisankina",
+
+  "about-text-1": "Noforonina tamin’ny taona 2022, ny orinasa Reny Events dia efa nahazo toerana eo amin’ny sehatry ny fikarakarana hetsika eto an-drenivohitra. Reny Events dia fikambanana mpiray tsikay ihany koa izay manohana ny vehivavy amin’ny asa andavanandrony.",
+
+  "about-text-2": "Mikarakara hetsika mpiray tsikay izahay (fanambadiana, batemy, fitsingerenan’ny andro nahaterahana, sakafo an-drenivohitra…) ary manampy ny vehivavy manana tetikasa momba ny sakafo amin’ny fanomezana fahitana sy fivarotana.",
+
+  "about-text-3": "Ny iraka amintsika : manandratra ny talenta vehivavy, mamorona fifandraisana ara-tsosialy ary manolotra sakafo an-trano tena malagasy sy be fitiavana.",
+
+  "about-alt-image1": "Toeram-pivarotana Reny Events nandritra ny tsenam-pirahalahiana eny ivelany",
+  "about-alt-image2": "Loviany misy mofomamy sy tsindrin-tsakafo novokarin’ny vehivavy ao amin’ny fikambanana",
+  "about-alt-image3": "Mpiandraikitra an-tsitrapo sy mpahandro ao amin’ny Reny Events",
+  "about-alt-image4": "Rano voankazo vaovao sy zava-pisotro nentim-paharazana atolotr’i Reny Events"
+
+
+
 
      
 

@@ -20,40 +20,30 @@
      "services-title":"Nos Services d'Organisation Événementielle",
    "services-text":"De la conception à la réalisation, RENY Events vous accompagne dans tous vos projets événementiels avec un savoir-faire reconnu et une approche personnalisée.",
 
-   "first-service-title":"Séminaires & formations",
-   "first-service-one":"Organisation de conférences, séminaires, formations, ateliers et workshops",
-   "first-service-two": "Salle équipées",
-   "first-service-three": "Matériel audiovisuel",
+   
 
-   "second-service-title": "Spectacles & Shows",
-   "second-service-one":"Soirée d'entreprise",
-   "second-service-two": "Concerts",
-   "second-service-three": "Coordination artistique",
+  "first-service-title": "Conférences, Séminaires & Formations",
+  "first-service-description": "Organisation complète de conférences, séminaires et formations avec salles équipées et matériel audiovisuel.",
 
-   "third-service-title":"Foires & Salons",
-    "third-service-one":"Stands personnalisés",
-    "third-service-two":"Logistique complète",
-    "third-service-three":"Promotion événementielle",
+  "second-service-title": "Soirées d'entreprise & Concerts",
+  "second-service-description": "Organisation de soirées entreprises, concerts et coordination artistique pour des événements spectaculaires.",
 
-    "forth-service-title":"Conférences",
+  "third-service-title": "Salons & Expositions",
+  "third-service-description": "Stands personnalisés, logistique complète et promotion événementielle pour vos participations aux salons.",
 
-   "forth-service-one": "Organisation de webinaires, colloques et conférences de presse",
-    "forth-service-two":"Décoration événementielle",
-    "forth-service-three":"Matériel audiovisuel",
+  "forth-service-title": "Webinaires & Colloques",
+  "forth-service-description": "Gestion de webinaires, colloques et conférences avec décoration événementielle et équipement audiovisuel.",
 
+  "fifth-service-title": "Événementiel d'entreprise global",
+  "fifth-service-description": "Conception globale, coordination logistique et communication intégrée pour vos événements professionnels.",
+
+  "sixth-service-title": "Relations Presse & Communication",
+  "sixth-service-description": "Plans de communication, invitations médias et gestion de presse pour votre visibilité événementielle.",
 
 
-    "fifth-service-title":"Événements Corporate",
-    "fifth-service-one": "Concept global",
-    "fifth-service-two":"Coordination logistique",
-    "fifth-service-three":"Communication intégrée",
 
 
-    "sixth-service-title":"Relations Publiques",
 
-    "sixth-service-one":"Plan de communication",
-    "sixth-service-two":"Invitation média",
-    "sixth-service-three":"Gestion de presse",
 
     "contact-section-title": "Contactez RENY Events",
     "contact-section-text":"Vous avez un projet d'événement ? Contactez-nous dès maintenant pour discuter de vos besoins et obtenir un devis personnalisé.",
@@ -62,11 +52,96 @@
      "Suivez nos actualités": "Suivez nos actualités",
     "Adresse":"Adresse",
 
+
+
+
     "Envoyer un mail": "Envoyer un mail",
      "contact-section-right-side-text": "Décrivez-nous votre projet et nous vous recontacterons rapidement avec une proposition personnalisée.",
      "Envoyer":"Envoyer",
      "contact-section-placeholder": "Décrivez-nous votre évènement: objectif, format...",
-     "footer-left-text": "Organisateur d’événements professionnels, associatifs, culturels, sportifs, corporatifs et tous vos événements divers, conférences et foires."
+     "footer-left-text": "Organisateur d’événements professionnels, associatifs, culturels, sportifs, corporatifs et tous vos événements divers, conférences et foires.",
+
+
+     
+  "footer-brand": "RENY EVENTS",
+  "footer-description": "Organisateur d'événements professionnels, associatifs, culturels, sportifs, corporatifs et tous vos événements divers, conférences et foires.",
+  
+  "footer-phones": "038 22 749   038 00 01 03",
+  
+  "footer-address-line1": "1 Reny events",
+  "footer-address-line2": "1 Pavillon 2, Cité Perrier, Ambohijatovo",
+  
+  "footer-section-services": "NOS SERVICES",
+  "footer-service-1": "Séminaires & formations",
+  "footer-service-2": "Spectacles & Shows",
+  "footer-service-3": "Conférences",
+  "footer-service-4": "Foires & Salons",
+  
+  "footer-section-nav": "NAVIGATION",
+  "footer-nav-home": "Accueil",
+  "footer-nav-services": "Services",
+  "footer-nav-about": "À propos",
+  "footer-nav-contact": "Contactez",
+  
+  "footer-copyright": "© 2025 RENY Events. Tous droits réservés.",
+  "footer-tagline": "Organisateur événementiel professionnel.",
+
+  
+  "contact-title": "Contactez RENY Events",
+  "contact-subtitle": "Vous avez un projet d'événement ? Contactez-nous dès maintenant pour discuter de vos besoins et obtenir un devis personnalisé.",
+
+  "contact-form-title": "Envoyer un mail",
+  "contact-form-description": "Décrivez-nous votre projet et nous vous recontacterons rapidement avec une proposition personnalisée.",
+
+  "contact-name": "Votre nom",
+  "contact-email": "Votre email",
+  "contact-subject": "Objet",
+  "contact-message": "Décrivez-nous votre évènement : objectif, format, nombre de participants, date souhaitée…",
+  "contact-placeholder": "Incluez toutes les informations utiles (budget, lieu, etc.)",
+  "contact-send": "Envoyer",
+
+  
+  "contact-icons": {
+    "facebook": {
+      "title": "Facebook",
+      "description": "Reny Events"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "description": "038 32 746 01 / 034 80 001 88"
+    },
+    "address": {
+      "title": "Adresse",
+      "description": "Pavillon 2, Cité Perrier, Ambohijatovo"
+    },
+    "availability": {
+      "title": "Disponibilité",
+      "description": "7j/7 – 24h/24"
+    }
+  },
+
+  
+  "about-badge": "NOTRE HISTOIRE",
+  "about-title": "Reny Events : de l’événementiel, du solidaire",
+
+  "about-text-1": "Créée en 2022, la société Reny Events s’est constituée une place dans le paysage de l’organisation événementielle dans la capitale. Reny Events est également une association solidaire qui soutient les femmes dans leurs activités quotidiennes.",
+
+  "about-text-2": "Nous organisons des événements solidaires (mariages, baptêmes, anniversaires, repas de quartier…) et nous accompagnons les femmes porteuses de projets culinaires en leur offrant visibilité et débouchés commerciaux.",
+
+  "about-text-3": "Notre mission : valoriser le talent des femmes, créer du lien social et proposer une cuisine maison authentique et généreuse.",
+
+  "about-alt-image1": "Stand Reny Events lors d’un marché solidaire en plein air",
+  "about-alt-image2": "Plateaux de pâtisseries et desserts préparés par les femmes de l’association",
+  "about-alt-image3": "Bénévoles et cuisinières de Reny Events",
+  "about-alt-image4": "Jus de fruits frais et boissons artisanales proposées par Reny Events"
+
+
+
+
+
+
+
+}
 
      
     
@@ -75,4 +150,3 @@
 
 
 
-}

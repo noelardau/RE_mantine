@@ -1,6 +1,7 @@
 import { IconAt, IconBrandFacebook, IconMapPin, IconPhone, IconSun } from '@tabler/icons-react';
 import { Box, Stack, Text } from '@mantine/core';
 import classes from './ContactIcons.module.css';
+import { useTranslation } from '~/hooks/useTranslation';
 
 interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   icon: typeof IconSun;
@@ -24,14 +25,36 @@ function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconP
     </div>
   );
 }
-const MOCKDATA = [
-  { title: 'Facebook', description: 'Reny Events', icon: IconBrandFacebook },
-  { title: 'Phone', description: '038 32 746 01 / 034 80 001 88', icon: IconPhone },
-  { title: 'Address', description: 'Pavillon 2, Cité Perrier Ampandrana', icon: IconMapPin },
-  { title: 'Disponibilité', description: '7j/7', icon: IconSun },
-];
 
 export function ContactIconsList() {
+  const {t} = useTranslation()
+
+  const MOCKDATA = [
+      {
+        title: t('contact-icons.facebook.title'),
+        description: t('contact-icons.facebook.description'),
+        icon: IconBrandFacebook,
+        link: 'https://facebook.com/renyevents' // à adapter
+      },
+      {
+        title: t('contact-icons.phone.title'),
+        description: t('contact-icons.phone.description'),
+        icon: IconPhone,
+        link: 'tel:+261383274601'
+      },
+      {
+        title: t('contact-icons.address.title'),
+        description: t('contact-icons.address.description'),
+        icon: IconMapPin,
+        link: 'https://maps.google.com/?q=Pavillon+2+Cité+Perrier+Ambohijatovo+Antananarivo'
+      },
+      {
+        title: t('contact-icons.availability.title'),
+        description: t('contact-icons.availability.description'),
+        icon: IconSun
+      },
+    ]
+
   const items = MOCKDATA.map((item, index) => <ContactIcon key={index} {...item} />);
   return <Stack>{items}</Stack>;
 }

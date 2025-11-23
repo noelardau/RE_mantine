@@ -12,42 +12,44 @@ import {
 import classes from './FeaturesCards.module.css';
 
 import { useTranslation } from '~/hooks/useTranslation';
-const mockdata = [
-  {
-    title: 'Séminaires & formations',
-    description: 'Organisation complète de conférences, séminaires et formations avec salles équipées et matériel audiovisuel.',
-    icon: IconSchool, // ou IconPresentation
-  },
-  {
-    title: 'Conférences',
-    description: 'Gestion de webinaires, colloques et conférences avec décoration événementielle et équipement audiovisuel.',
-    icon: IconMicrophone, // ou IconVideo
-  },
-  {
-    title: 'Spectacles & Shows',
-    description: 'Organisation de soirées entreprises, concerts et coordination artistique pour des événements spectaculaires.',
-    icon: IconMusic, // ou IconTheater
-  },
-  {
-    title: 'Événements Corporate',
-    description: 'Conception globale, coordination logistique et communication intégrée pour vos événements professionnels.',
-    icon: IconBuilding, // ou IconBriefcase
-  },
-  {
-    title: 'Foires & Salons',
-    description: 'Stands personnalisés, logistique complète et promotion événementielle pour vos participations aux salons.',
-    icon: IconBuildingStore, // ou IconMapPin
-  },
-  {
-    title: 'Relations Publiques',
-    description: 'Plans de communication, invitations médias et gestion de presse pour votre visibilité événementielle.',
-    icon: IconNews, // ou IconMessage
-  },
-];
+
 
 export function FeaturesCards() {
 
   const { t } = useTranslation()
+
+const mockdata = [
+  {
+    title: t("first-service-title"),
+    description: t("first-service-description"),
+    icon: IconSchool, // ou IconPresentation
+  },
+  {
+    title: t("forth-service-title"),
+    description: t("forth-service-description"),
+    icon: IconMicrophone, // ou IconVideo
+  },
+  {
+    title: t("second-service-title"),
+    description: t("second-service-description"),
+    icon: IconMusic, // ou IconTheater
+  },
+  {
+    title: t("fifth-service-title"),
+    description: t("fifth-service-description"),
+    icon: IconBuilding, // ou IconBriefcase
+  },
+  {
+    title: t("third-service-title"),
+    description: t("third-service-description"),
+    icon: IconBuildingStore, // ou IconMapPin
+  },
+  {
+    title: t("sixth-service-title"),
+    description: t("sixth-service-description"),
+    icon: IconNews, // ou IconMessage
+  },
+];
 
 
   const theme = useMantineTheme();
