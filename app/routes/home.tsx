@@ -44,12 +44,28 @@ export function meta({}: Route.MetaArgs) {
 
 
 export async function clientLoader({}: Route.LoaderArgs) {
- 
- let data = await fetch("http://localhost:3000/v1/evenements/all")
- 
- let events = await data.json()
-  return {
-    events
+ try{
+
+   let data = await fetch("http://localhost:3000/v1/evenements/all")
+   
+   let events = await data.json()
+   return {
+     events
+    }
+  }catch(e){
+    return {
+      events: [{
+      evenement_id: "dkjfqlsjfm",
+      titre: "",
+      description_evenement: "",
+     
+      type_evenement: {type_evenement_nom:"Test"},
+     
+     
+   
+      fichiers: [],
+    }]
+    }
   }
 }
 
