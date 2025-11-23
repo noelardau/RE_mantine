@@ -45,10 +45,12 @@ export function meta({}: Route.MetaArgs) {
 
 export async function clientLoader({}: Route.LoaderArgs) {
  
-//  let data = await fetch("http://localhost:3000/v1/evenements/all")
+ let data = await fetch("http://localhost:3000/v1/evenements/all")
  
-//  let events = await data.json()
-  return null;
+ let events = await data.json()
+  return {
+    events
+  }
 }
 
 
@@ -72,7 +74,7 @@ export default function Home({loaderData}: Route.ComponentProps) {
  return <div >
 
       <HeroSection></HeroSection>
-      <FuturEvent events={events}></FuturEvent>
+      <FuturEvent events={loaderData.events}></FuturEvent>
      <Services id="services"></Services>
       <AboutSection></AboutSection>
       <Contact></Contact>

@@ -20,7 +20,7 @@ export default function AppLayout(){
           position: 'relative', // Change de absolute à relative
           backgroundColor: 'var(--mantine-color-body)',
           borderTop: '1px solid var(--mantine-color-gray-3)',
-          padding: 'var(--mantine-spacing-md)',
+         
         },
       }}
     
@@ -36,7 +36,7 @@ export default function AppLayout(){
            </Container>
         </AppShell.Main>
 
-        <AppShell.Footer >
+        <AppShell.Footer>
             <FooterLinks></FooterLinks>
         </AppShell.Footer>
 

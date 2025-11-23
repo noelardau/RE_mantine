@@ -43,7 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <I18nextProvider i18n={i18n}>
-          <MantineProvider theme={theme}>{children}</MantineProvider>
+          <MantineProvider theme={theme} defaultColorScheme="light">{children}</MantineProvider>
         </I18nextProvider>
         <ScrollRestoration />
         <Scripts />

@@ -1,34 +1,25 @@
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
+import { IconBrandFacebook, IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
 import { ActionIcon, Container, Group, Text } from '@mantine/core';
 
 import classes from '../styles/FooterLinks.module.css';
 
 const data = [
   {
-    title: 'About',
+    title: 'NOS SERVICES',
     links: [
-      { label: 'Features', link: '#' },
-      { label: 'Pricing', link: '#' },
-      { label: 'Support', link: '#' },
-      { label: 'Forums', link: '#' },
+      { label: 'Séminaires & formateurs', link: '#' },
+      { label: 'Spectacles & Shows', link: '#' },
+      { label: 'Conférences', link: '#' },
+      { label: 'Foires & Salons', link: '#' },
     ],
   },
   {
-    title: 'Project',
+    title: 'NAVIGATION',
     links: [
-      { label: 'Contribute', link: '#' },
-      { label: 'Media assets', link: '#' },
-      { label: 'Changelog', link: '#' },
-      { label: 'Releases', link: '#' },
-    ],
-  },
-  {
-    title: 'Community',
-    links: [
-      { label: 'Join Discord', link: '#' },
-      { label: 'Follow on Twitter', link: '#' },
-      { label: 'Email newsletter', link: '#' },
-      { label: 'GitHub discussions', link: '#' },
+      { label: 'Accueil', link: '#' },
+      { label: 'Services', link: '#' },
+      { label: 'A propos', link: '#' },
+      { label: 'Contactez', link: '#' },
     ],
   },
 ];
@@ -59,27 +50,44 @@ export function FooterLinks() {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          {/* <MantineLogo size={30} /> */}
-          <Text size="xs" c="dimmed" className={classes.description}>
-            Build fully functional accessible web applications faster than ever
+          <Text fw={700} size="xl" className={classes.brand}>
+            RENY EVENTS
+          </Text>
+          <Text size="sm" c="dimmed" className={classes.description}>
+            Organisateur d'événements professionnels, associatifs, culturels, sportifs, corporatifs et tous vos événements divers, conférences et foires.
+          </Text>
+          <Group mt="sm">
+            <Text size="sm" c="dimmed">
+              038 22 749
+            </Text>
+            <Text size="sm" c="dimmed">
+              038 00 01 03
+            </Text>
+          </Group>
+          <Text size="sm" c="dimmed" mt="xs">
+            1 Reny events
+          </Text>
+          <Text size="sm" c="dimmed">
+            1 Pavillon 2, Cité Perrier, Amphandra
           </Text>
         </div>
         <div className={classes.groups}>{groups}</div>
       </Container>
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2020 mantine.dev. All rights reserved.
+          © 2025 RENY Events. Tous droits réservés.
+        </Text>
+        <Text c="dimmed" size="sm">
+          Organisateur événementiel professionnel.
         </Text>
 
         <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter size={18} stroke={1.5} />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube size={18} stroke={1.5} />
-          </ActionIcon>
+        
           <ActionIcon size="lg" color="gray" variant="subtle">
             <IconBrandInstagram size={18} stroke={1.5} />
+          </ActionIcon>
+          <ActionIcon size="lg" color="gray" variant="subtle">
+            <IconBrandFacebook size={18} stroke={1.5} />
           </ActionIcon>
         </Group>
       </Container>
