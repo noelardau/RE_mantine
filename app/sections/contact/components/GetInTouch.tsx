@@ -25,7 +25,7 @@ export function GetInTouch() {
         </div>
 
         <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
-          <Text fz="lg" fw={700} className={classes.title}>
+          <Text  className="titleSection">
             Envoyer un mail
           </Text>
 
