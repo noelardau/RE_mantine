@@ -10,7 +10,7 @@ import { api_get_event_url } from '~/constants/api';
 
 
 
-function Card({ titre, type_evenement, image, idEvent}) {
+function Card({ titre, type_evenement, image, idEvent}:{titre: string, type_evenement:{},image:string, idEvent: string}) {
   return (
     <Paper
       shadow="md"
