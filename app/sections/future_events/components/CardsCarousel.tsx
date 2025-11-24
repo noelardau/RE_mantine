@@ -6,6 +6,7 @@ import "@mantine/carousel/styles.css"
 import type { evenement } from '../interfaces/Evenement';
 import { base64ToDataUrl } from '../utils/base64';
 import { Link } from 'react-router';
+import { api_get_event_url } from '~/constants/api';
 
 
 
@@ -27,7 +28,7 @@ function Card({ titre, type_evenement, image, idEvent}) {
           {titre}
         </Title>
       </div>
-     <Link to={`http://localhost:3001/event/${idEvent}`}>
+     <Link to={api_get_event_url(idEvent)}>
        <Button variant="white" color="dark">
        Détails 
       </Button>

@@ -86,8 +86,8 @@
   "contact-subtitle": "Manana tetikasa hetsika ve ianao ? Mifandraisa aminay izao mba hiresahana ny filanareo sy hahazoana tolotra manokana.",
 
   "contact-form-title": "Mandefasa mailaka",
-  "contact-form-description": "Lazao aminay ny tetikasanao ary hifandray aminao haingana izahay miaraka amin'ny tolotra manokana.",
-
+ 
+"contact-form-description": "Tsindrio ny bokotra eto ambany raha te handefa mailaka mivantana aminay ianao.",
   "contact-name": "Anaranao",
   "contact-email": "Mailakao",
   "contact-subject": "Lohahevitra",
@@ -129,6 +129,7 @@
   "about-alt-image2": "Loviany misy mofomamy sy tsindrin-tsakafo novokarin’ny vehivavy ao amin’ny fikambanana",
   "about-alt-image3": "Mpiandraikitra an-tsitrapo sy mpahandro ao amin’ny Reny Events",
   "about-alt-image4": "Rano voankazo vaovao sy zava-pisotro nentim-paharazana atolotr’i Reny Events"
+  
 
 
 
