@@ -20,14 +20,22 @@ function Card({ titre, type_evenement, image, idEvent}:{titre: string, type_even
       style={{ backgroundImage: `url(${image})` }}
       className={classes.card}
     >
-      <div>
-        <Text className={classes.category} size="xs">
-          {type_evenement.nom}
-        </Text>
-        <Title order={3} className={classes.title}>
-          {titre}
-        </Title>
-      </div>
+     <div
+  style={{
+    backgroundColor: 'rgba(0, 0, 0, 0.65)',   // noir à 65 % d’opacité
+    padding: '1.5rem 1.25rem',
+    // borderRadius: '12px',
+    backdropFilter: 'blur(8px)',             // effet verre dépoli (facultatif mais magnifique)
+    // border: '1px solid rgba(255, 255, 255, 0.1)',
+  }}
+>
+  <Text className={classes.category} size="xs" c="white" fw={600}>
+    {type_evenement.nom}
+  </Text>
+  <Title order={3} className={classes.title} c="white" fw={700}>
+    {titre}
+  </Title>
+</div>
      <Link to={api_get_event_url(idEvent)}>
        <Button variant="white" color="dark">
        Détails 
