@@ -1,8 +1,10 @@
 import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
+
  
   colors: {
+  
    reny: [
   "oklch(97% 0.03 27.325)",   // 0
   "oklch(94% 0.06 27.325)",   // 1
@@ -16,6 +18,7 @@ export const theme = createTheme({
   "oklch(32% 0.22 27.325)"     // 9
 ]
   },
+
   primaryColor: 'reny',
   primaryShade: 5,     // ou 6 selon ton goût, 5 est plus lumineux
 });

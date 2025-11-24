@@ -1,5 +1,7 @@
-import { Burger, Container, Drawer, Group, Stack, Title } from '@mantine/core';
+import { Burger, Container, Drawer, Group, Stack, Title, ActionIcon } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { useMantineColorScheme, useComputedColorScheme } from '@mantine/core';  // ← à ajouter
+import { IconSun, IconMoon } from '@tabler/icons-react';                         // ← à ajouter
 import classes from '../styles/HeaderMenu.module.css';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LangageSwitcher';
@@ -9,6 +11,10 @@ export function HeaderMenu() {
   const { t } = useTranslation();
   const [opened, { toggle, close }] = useDisclosure(false);
 
+  // === AJOUT DU SWITCH THÈME (2 lignes seulement) ===
+  const { toggleColorScheme } = useMantineColorScheme();
+  const computedColorScheme = useComputedColorScheme('light'); // 'light' ou 'dark'
+
   const links = [
     { link: '#hero', label: t("home") },
     { link: '#services', label: t("services") },
@@ -17,8 +23,7 @@ export function HeaderMenu() {
     { link: "#", label: "ls" },
   ];
 
-  // Fonction de scroll fluide + fermeture du drawer + mise à jour URL
-  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     
     if (href === "#") return; // pour le LanguageSwitcher
@@ -51,6 +56,18 @@ export function HeaderMenu() {
     </Anchor>
   ));
 
+  // Icône Soleil / Lune qui change automatiquement
+  const ThemeToggle = () => (
+    <ActionIcon
+      onClick={() => toggleColorScheme()}
+      variant="subtle"
+      size="lg"
+      aria-label="Toggle theme"
+    >
+      {computedColorScheme === 'dark' ? <IconSun size={20} /> : <IconMoon size={20} />}
+    </ActionIcon>
+  );
+
   return (
     <header className={classes.header}>
       <Container size="md">
@@ -59,14 +76,14 @@ export function HeaderMenu() {
             RENY Events
           </Title>
 
-          {/* Desktop */}
+          {/* === Desktop : on ajoute le toggle à droite === */}
           <Group gap={20} visibleFrom="sm">
             {items}
+            <ThemeToggle />   {/* ← ajouté ici */}
           </Group>
 
-          {/* Mobile */}
+          {/* === Mobile : on ajoute le toggle dans le drawer === */}
           <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
-
           <Drawer
             opened={opened}
             onClose={close}
@@ -88,6 +105,10 @@ export function HeaderMenu() {
                   {link.label === "ls" ? <LanguageSwitcher /> : link.label}
                 </Anchor>
               ))}
+              {/* Toggle thème dans le drawer mobile */}
+              <Group justify="center" mt="md">
+                <ThemeToggle />
+              </Group>
             </Stack>
           </Drawer>
         </div>
